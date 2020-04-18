@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Fluid Website</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!--nav-->
+    <div class="grid-container-nav">
+        <div><img src="img/food-and-restaurant.svg" alt="" id="img-logo"></div>
+        <div class="nav-info">
+            <div class="buttonContainer">
+                <a class="button" href="#" title="Teléfono">Teléfono</a>
+            </div>
+            <div class="buttonContainer">
+                <a class="button" href="#" title="Email">Email</a>
+            </div>
+        </div>
+      </div>
+
+      <!--img - txt - img-->
+      <div class="grid-container">
+        <div><img src="img/pics/man-night-bar-barman-110472.jpg" alt=""></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iusto.</p></div>
+        <div><img src="img/pics/man-night-bar-barman-110472.jpg" alt=""></div>
+      
+      </div>
+
+      <!--full img-->
+      <div class="grid-container-once">
+        <div class="rel-effect" id="denegar"><a href="#">
+          <img src="img/pics/group-of-people-1587927.jpg" alt=""></a>
+          <div class="buttonContainer abs-effect">
+            <h3>Un cocktail al día gratis, por solo 29.90 PEN al mes</h3>
+            <a class="button" id="denegar" href="#" title="Empezar Suscripción">Empezar Suscripción</a>
+          </div>
+        </div>
+      
+      </div>
+
+      <!--two img-->
+      <div class="grid-container-double">
+        <div><img src="img/drink.svg" alt="" id="img-plan-1">
+        <h3>Plan NightHero</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quisquam.</p>
+        </div>
+        <div><img src="img/party.svg" alt="" id="img-plan-2">
+            <h3>Plan Nightover</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quae.</p>
+        </div>
+      </div>
+
+      <!--footer-->
+      <footer class="grid-container-once">
+          <div><p>&copy; <a href="#" class="link">Pipo Corp</a></p></div>
+      </footer>
+
+
+      <!--jquery-->
+      <script>
+        document.getElementById("denegar").addEventListener("click", function(event){
+          alert("Has pulsado este enlace, pero vamos a cancelar este evento\nPor tanto, no vamos a llevarte a ningún lado");
+          event.preventDefault()
+        });
+      </script>
+</body>
+</html>
